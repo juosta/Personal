@@ -30,7 +30,12 @@ body{
 .main-title::after{
     content: "";
     display: block;
-    border: 1px solid black;
+    border: 1px solid var(--blueish);
     width: 70px;
     margin: 20px auto;
+}
+
+.secondary-title{
+    font-size: 33px;
+    margin: 40px 0;
 }
