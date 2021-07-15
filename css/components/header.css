@@ -1,4 +1,33 @@
-/* header{
+header{
+    z-index: 1;
+}
+.nameh1{
+    font-family: 'Sacramento';
+    color: white;
+    font-size: 45px;
+}
+
+header a {
+    
+    color:white;
+    padding: 5px 15px;
+    transition: border 1s ease; 
+    border-bottom: solid 1px transparent;
+}
+
+header a:hover{
+    color:white;
+    border-bottom: solid 1px white;
+    
+}
+
+header.navbar{
+    width: 100%;
     position: absolute;
     background-color: transparent;
-} */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    flex-wrap: nowrap;
+    align-items: center;
+}

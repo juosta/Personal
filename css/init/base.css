@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+  }
+.no-underline {
+    text-decoration: none;
+}
+
+body{
+    position:relative;
+}
+
+.bg-light-l{
+    background-color: var(--bg-light);
+    color: #212529;
+}
+
+.bg-grey{
+    background-color: var(--bg-dark);
+    color: white;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.main-title{
+    text-align: center!important;
+    font-size: 37px;
+}
+.main-title::after{
+    content: "";
+    display: block;
+    border: 1px solid black;
+    width: 70px;
+    margin: 20px auto;
+}

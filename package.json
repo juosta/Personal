@@ -10,6 +10,7 @@
   "author": "Asta Juodelyte",
   "license": "MIT",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "particles.js": "^2.0.0"
   }
 }

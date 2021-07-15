@@ -1,11 +1,28 @@
 footer a {
-    color: black;
+
     text-decoration: none;
-}
-footer {
-    line-height: 30px;
 }
 
 footer i {
-    padding: 6px;
+    padding: 4px 0px;
+}
+
+.bg-dark {
+    background-color: #212529!important;
+}
+.text-white {
+    color: #fff!important;
+}
+
+.social{
+    padding-bottom: 0!important;
+    padding: 1rem!important;
+}
+.social-icon{
+    margin: 0 20px;
+}
+
+.copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem!important;
 }
