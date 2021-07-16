@@ -12,7 +12,7 @@
 <body>
     <header class="navbar">
         <h1 class='nameh1'>Asta Juodelytė</h1>
-        <nav >
+        <nav class='links-full'>
             <a class="no-underline" href="#hero">Home</a>
             <a class="no-underline" href="#about">About Me</a>
             <a class="no-underline" href="#skills">Skills</a>
@@ -20,6 +20,7 @@
             <a class="no-underline" href="#projects">My Projects</a>
             <a class="no-underline" href="#contact">Contact</a>
         </nav> 
+        <div class="drop-menu btn btn-dark"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </header>
     <main>
         <section class="hero">
@@ -83,55 +84,55 @@
                 </div>
             </div>
             <div class="row contact-info text-center">
-                <div class="col-4">
+                <div class="col-6 col-md-4">
                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                     <p>Email me at</p>
                     <p>asta.juodelyte@gmail.com</p>
                 </div>
-                <div class="col-4">
+                <div class="col-6 col-md-4">
                     <i class="fa fa-mobile" aria-hidden="true"></i>
                     <p>Call me on</p>
                     <p>+370 639 51627</p>
                 </div>
-                <div class="col-4">
+                <div class="col-6 ml-3 col-md-4">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                     <p>My location</p>
                     <p>Kaunas</p>
                 </div>
             </div>
             <div class="row send-msg">
-                <div class="col-5">
+                <div class="col-5 hidden visible-lg">
                     <img src="./img/2456740.jpg" class="contact-img" alt="moon">
                 </div>
-                <div class="col-7 send-msg-form">
+                <div class="col-lg-7 col-sm-12 send-msg-form">
                         <h2 class="secondary-title text-center">Send me a message</h2>
                         <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <div class="form-group">
                                         <label class="label" for="name">Full Name</label>
                                         <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                                     </div>
                                 </div>
-                                <div class="col-md-6"> 
+                                <div class="col-6"> 
                                     <div class="form-group">
                                         <label class="label" for="email">Email Address</label>
                                         <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-12">
                                     <div class="form-group">
                                         <label class="label" for="subject">Subject</label>
                                         <input type="text" class="form-control subject" name="subject" id="subject" placeholder="Subject">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-12">
                                     <div class="form-group">
                                         <label class="label" for="#">Message</label>
                                         <textarea name="message" class="form-control message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-12">
                                     <div class="form-group text-center">
                                         <input type="submit" value="Send Message" class="btn btn-light">
                                         

@@ -31,3 +31,23 @@ header.navbar{
     flex-wrap: nowrap;
     align-items: center;
 }
+
+
+.links-full{
+    display: none;
+}
+.drop-menu{
+    display: block;
+}
+.drop-menu i{
+    line-height: 18px;
+}
+
+@media(min-width: 927px){
+    .links-full{
+        display: block;
+    }
+    .drop-menu{
+        display: none;
+    }
+}

@@ -4,6 +4,8 @@
 .form-group .label{
 	display:block;
 	margin: 5px 0;
+	text-transform: uppercase;
+    font-weight: 600;
 }
 
 .form-group .form-control{
