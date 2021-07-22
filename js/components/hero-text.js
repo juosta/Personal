@@ -10,3 +10,4 @@ function printLetterByLetter(destination, message, speed){
 }
 
 export {printLetterByLetter}
+

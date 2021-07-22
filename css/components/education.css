@@ -3,3 +3,57 @@
     background-size: cover;
     background-position: center;
 }
+
+.timeline{
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+.edu-content::before{
+  content: "";
+  position: absolute;
+  border: 1px solid var(--blueish);
+  height: 4.5rem;
+  margin-left: -24px;
+}
+
+.edu-content .icon {
+  color: var(--blueish);
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid var(--blueish);
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: -38px;
+  margin-top: -26px;
+}
+
+.fa.fa-graduation-cap{
+    padding: 5px 4px;
+}
+
+@media(max-width: 990px){
+  .edu-content{
+    display:block;
+    width:100%;
+    text-align: center;
+  }
+
+  .edu-content.bit{
+    margin-top: 50px; 
+  }
+  .edu-content::before{
+    visibility: hidden;
+  }
+  .edu-content .icon {
+    color: white;
+    position:static;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    margin: 0;
+  }
+}
