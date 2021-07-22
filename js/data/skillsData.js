@@ -1,27 +1,27 @@
 const skillsData= [
     {
-        name: "Development",
-        percent: "80%"
+        name: "Asp.net",
+        percent: "65%"
     },
     {
-        name: "WordPress",
-        percent: "59%"
+        name: "PHP",
+        percent: "95%"
     },
     {
-        name: "Photoshop",
-        percent: "88%"
+        name: "JavaScript",
+        percent: "93%"
     },
     {
         name: "Html",
-        percent: "96%"
+        percent: "97%"
     },   
     {
         name: "Css",
-        percent: "70%"
+        percent: "89%"
     },   
     {
-        name: "Asp.net",
-        percent: "58%"
+        name: "Laravel",
+        percent: "70%"
     },   
 ]
 

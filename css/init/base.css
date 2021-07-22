@@ -44,3 +44,8 @@ body{
     font-size: 27px;
     margin: 0;
 }
+
+.description-par{
+    margin: 20px 0;
+    text-align:justify;
+}
