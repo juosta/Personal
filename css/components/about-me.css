@@ -1,0 +1,33 @@
+.traits, .hobbies {
+    /* border: 1px solid var(--blueish); */
+    padding: 30px;
+}
+.props{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.traits{
+    border-left: 1px solid var(--blueish);
+    border-top: 1px solid var(--blueish);
+} 
+.hobbies {
+    border-right: 1px solid var(--blueish);
+    border-bottom: 1px solid var(--blueish);
+}
+
+/* .property{
+    text-transform: uppercase;
+    border: 1px solid var(--blueish);
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: var(--bg-light);
+} */
+
+.property{
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
