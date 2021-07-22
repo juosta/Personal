@@ -22,6 +22,7 @@
     color:white;
     padding: 19px;
     background-color: var(--blueish);
+    width:60px;
     border-radius: 50%;
     font-size: 40px;
     line-height: 22px;
@@ -30,4 +31,9 @@
 
 .fa.fa-paper-plane{
     font-size: 25px;
+    padding-left: 15px;
+}
+
+.fa.fa-mobile{
+    width: 60px;
 }
