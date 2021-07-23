@@ -1,0 +1,36 @@
+#projects{
+    background-image: url('../../img/bg/mads-schmidt-rasmussen-6YmzwamGzCg-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cats{
+    display:flex;
+    justify-content: space-around;
+}
+
+.cat{
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid var(--blueish);
+    border-radius: 4px;
+    /* box-shadow:5px 5px 5px black; */
+    transition: all 1s;
+}
+
+.cat:hover{
+    background-color: var(--blueish);
+    cursor: pointer;
+    color:#fff;
+    box-shadow:5px 5px 5px var(--blueish);
+    border-color: black;
+}
+
+.card{
+    background-color: var(--blueish);
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 10px;
+    opacity: 0.5;
+}
