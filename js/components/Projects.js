@@ -76,80 +76,54 @@ class Projects{
     }
         render() {
         let HTML = `<div class="row center">
-        <div class="col-12 work-menu">`;
+        <div class="col-6 ml-3 text-center cats">`;
 
         for (const item of this.data.categories) {
-            HTML += `<div class="work-m-b"><div class="js-${item}-menu-btn work-menu-button">${item}</div></div>`;
+            HTML += `<div class="cats"><div class="js-${item}-cat cat">${item}</div></div>`;
         }
         HTML += `</div></div>`;
         
-        HTML += `<div class="row ">`;
+        HTML += `<div class="row project-block">`;
+        HTML += `<div class="col-12 project-list">`;
         for (const item of this.data.list) {
-            HTML += `<div class="col-12 col-lg-4 img-row"><img src="${this.data.imgPath + item.img}" alt="${item.name}" class="work-img ${item.categories}">
+            HTML += `<div class="card  ${item.categories}">
+            <a href="${item.link}" class="img-link" target="_blank"><img src="${this.data.imgPath + item.img}" alt="${item.name}" class="project-img"></a>
             <div class="imageOverlay"></div>
-            <h3 class="workTitle">${item.title}</h>
-            <h4 class="workSubtitle">${item.subtitle}</h4>
-            
+            <h3 class="project-name text-center">${item.name}</h3>
+            <p class="project-about text-center">${item.about}</p>
+            <a href="${item.link}" class="project-link" target="_blank">Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
             </div>`;
         }
+        HTML += `</div>`;
         HTML += `</div>`;
         
         this.DOM.insertAdjacentHTML("beforeend", HTML);
         
     }
+    addEvents() {
+        const filterItems = this.DOM.querySelectorAll('.cat');
+        const images = this.DOM.querySelectorAll(".card");
+        filterItems.forEach((item, index)=>{
+            item.addEventListener('click', () => {
+                filterItems[this.activeFilterIndex].classList.remove('selected');
+                item.classList.add('selected');
+            this.activeFilterIndex = index;
+            const filter= this.data.categories[index].toLowerCase();
+            for (const image of images) {
+                if(filter.toLowerCase() === "all"){
+                    images.forEach((item)=>{
+                        item.classList.add("visible");
+                    })
+                    break;
+                }
+                if(image.classList.contains(filter)){
+                    image.classList.add("visible");
+                } else {
+                    image.classList.remove("visible");
+                }
+            }
+        })
+    });
+} 
 }
 export { Projects }
-
-//     render() {
-//         let HTML = `<div class="row center">
-//         <div class="col-12 work-menu">`;
-
-//         for (const item of this.data.categories) {
-//             HTML += `<div class="work-m-b"><div class="js-${item}-menu-btn work-menu-button">${item}</div></div>`;
-//         }
-//         HTML += `</div></div>`;
-        
-//         HTML += `<div class="row ">`;
-//         for (const item of this.data.list) {
-//             HTML += `<div class="col-12 col-lg-4 img-row"><img src="${this.data.imgPath + item.img}" alt="${item.name}" class="work-img ${item.categories}">
-//             <div class="imageOverlay"></div>
-//             <h3 class="workTitle">${item.title}</h>
-//             <h4 class="workSubtitle">${item.subtitle}</h4>
-            
-//             </div>`;
-//         }
-//         HTML += `</div>`;
-        
-//         this.DOM.insertAdjacentHTML("beforeend", HTML);
-        
-//     }
-
-//     addEvents() {
-//         const filterItems = this.DOM.querySelectorAll('.work-menu-button');
-//         const images = this.DOM.querySelectorAll(".work-img");
-//         filterItems.forEach((item, index)=>{
-//             item.addEventListener('click', () => {
-//                 filterItems[this.activeFilterIndex].classList.remove('selected');
-//                 item.classList.add('selected');
-//             this.activeFilterIndex = index;
-//             const filter= this.data.categories[index].toLowerCase();
-//             for (const image of images) {
-//                 if(filter.toLowerCase() === "all"){
-//                     images.forEach((item)=>{
-//                         item.classList.add("visible");
-//                     })
-//                     break;
-//                 }
-//                 if(image.classList.contains(filter)){
-//                     image.classList.add("visible");
-//                 } else {
-//                     image.classList.remove("visible");
-//                 }
-//             }
-//         })
-//     });
-// } 
-
-// }
-
-// // export { OurWork }

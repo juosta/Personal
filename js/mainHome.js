@@ -16,3 +16,7 @@ randomizeProp(elm);
 //progress bars
 skills("#progressCol1","#progressCol2", skillsData);
 document.addEventListener("scroll", () => fillPorgress(skillsData));
+
+
+//projectss
+const projects = new Projects('#projects', projectsData);

@@ -1,49 +1,49 @@
 const projectsData = {
 imgPath: './img/thumbnails/',
     maxCount: 6,
-    categories: ['All', 'Individual', 'Teamwork', 'Designs'],
+    categories: ['All', 'Individual', 'Teamwork', 'Webdesign', '.net'],
     list: [
         {
+            img: '5.jpg',
+            name: 'Elvish',
+            categories: 'teamwork webdesign',
+            link: "https://github.com/juosta/25-grupe-portfolio-elvish",
+            about: "First group project"
+        },
+        {
             img: '1.jpg',
-            name: 'Notepad',
-            categories: 'webdesign wordpress',
-            title: "Studio & Art",
-            subtitle: "UI Elements, Icons"
+            name: 'Sign Up',
+            categories: 'webdesign individual',
+            link: "https://github.com/juosta/5-sign_up",
+            about: "One of the first designs that I tried to recreate"
         },
         {
             img: '2.jpg',
-            name: 'Frame',
-            categories: 'seo webdesign',
-            title: "Creative & Art",
-            subtitle: "Illustrations"
+            name: 'Coming soon',
+            categories: 'webdesign individual',
+            link: "https://github.com/juosta/4-coming_soon",
+            about: "coming soon countdown"
         },
         {
             img: '3.jpg',
-            name: 'Vinyl',
-            categories: 'work',
-            title: "Open Imagination",
-            subtitle: "Media, Icons"
+            name: 'Hommy',
+            categories: 'webdesign individual',
+            link: "https://github.com/juosta/6-hommy",
+            about: "about hommy"
         },
         {
             img: '4.jpg',
-            name: 'Paper cup',
-            categories: 'seo webdesign',
-            title: "Locked Steel Gate",
-            subtitle: "Graphics, UI elements"
-        },
-        {
-            img: '5.jpg',
-            name: 'Work book',
-            categories: 'seo work',
-            title: "MAC sunglasses",
-            subtitle: "Illustrations, Graphics"
+            name: 'Farm',
+            categories: 'webdesign individual',
+            link: "https://github.com/juosta/8-farm",
+            about: "about Farm"
         },
         {
             img: '6.jpg',
-            name: 'Note book',
-            categories: 'wordpress',
-            title: "Backpack Contents",
-            subtitle: "UI Elements, Media"
+            name: 'Appointment scheduling',
+            categories: 'individual .net',
+            link: "https://github.com/juosta/AppointmentScheduling",
+            about: "about"
         }
     ]
 
