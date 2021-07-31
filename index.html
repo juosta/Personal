@@ -8,7 +8,29 @@
     <title>Personal</title>
     <link rel="stylesheet" href="./css/custom-home.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_tWS59YBy4nnldiWn5O26f");
+        })();
+    </script>
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_2mdtpw8', 'template_avakmqx', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        var x = document.getElementById("snackbar");
+                        x.className = "show";
+                        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -144,12 +166,12 @@
                 </div>
             </div>
         </section>
-        <section class="bg-grey">
+        <!-- <section class="bg-grey">
             AVAILABLE FOR FREELANCE (KAZKUO PAKEISTI)
         </section>
         <section class="bg-grey">
             REVIEWS???
-        </section>
+        </section> -->
         <section class="container" id="contact">
             <div class="row">
                 <div class="col-12">
@@ -179,7 +201,8 @@
                 </div>
                 <div class="col-lg-7 col-sm-12 send-msg-form">
                     <h2 class="secondary-title text-center">Send me a message</h2>
-                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                    <div id="snackbar">Message sent!</div>
+                    <form id="contactForm" class="contactForm">
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
