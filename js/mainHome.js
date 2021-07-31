@@ -24,16 +24,23 @@ document.addEventListener("scroll", () => fillPorgress(skillsData));
 const projects = new Projects('#projects', projectsData);
 
 
+//header
 //back to top button
-var mybutton = document.getElementById("topbtn");
+const header = document.getElementById('header');
+
+const mybutton = document.getElementById("topbtn");
 mybutton.addEventListener("click", topFunction);
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     mybutton.style.display = "block";
+    header.style.position = "fixed";
+    header.classList.add("fixHead");
   } else {
     mybutton.style.display = "none";
+    header.style.position = "absolute";
+    header.classList.remove("fixHead");
   }
 }
 

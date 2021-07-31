@@ -1,5 +1,6 @@
 header{
     z-index: 1;
+    transition: all 1s;
 }
 .nameh1{
     font-family: 'Sacramento';
@@ -50,4 +51,9 @@ header.navbar{
     .drop-menu{
         display: none;
     }
+}
+
+.navbar.fixHead{
+    background-color: rgba(0,0,0, 0.85);
+    padding: 2px 60px;
 }
