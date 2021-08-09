@@ -43,10 +43,33 @@ header.navbar{
 .drop-menu{
     line-height: 18px;
 }
+.onSmallLinks{
+    display: none;
+    position: absolute;
+    width: 120px;
+    right: 0;
+    top: 0;
+    
+}
+.nav-area{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.85);
+}
+.drop-menu:hover + .onSmallLinks, .onSmallLinks:hover{
+    display: block;
+}
 
 @media(min-width: 927px){
     .links-full{
         display: block;
+    }
+    .onSmallLinks{
+        display: none;
     }
     .drop-menu{
         display: none;
@@ -57,3 +80,5 @@ header.navbar{
     background-color: rgba(0,0,0, 0.85);
     padding: 2px 60px;
 }
+
+

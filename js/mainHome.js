@@ -1,4 +1,4 @@
-import { printLetterByLetter } from './components/hero-text.js'
+import { TypeWriter } from './components/hero-text.js'
 import {renderParticles} from './components/particle.js'
 import { randomizeProp } from './components/randomizeProp.js'
 import {fillPorgress, skills} from './components/progress-bar/progress-bar.js'
@@ -7,7 +7,11 @@ import {Projects} from './components/Projects.js'
 import {projectsData} from './data/projectsData.js'
 
 // changing hero text
-printLetterByLetter("hero-text", "a Developer", 100);
+const txtElement = document.querySelector('#hero-text');
+const words = JSON.parse(txtElement.getAttribute('data-words'));
+const wait = txtElement.getAttribute('data-wait');
+
+new TypeWriter(txtElement, words, wait);
 renderParticles("#particles");
 
 //random size for hobbies and traits
@@ -48,3 +52,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+

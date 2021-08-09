@@ -18,7 +18,6 @@
         window.onload = function() {
             document.getElementById('contactForm').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // these IDs from the previous steps
                 emailjs.sendForm('service_2mdtpw8', 'template_avakmqx', this)
                     .then(function() {
                         console.log('SUCCESS!');
@@ -45,6 +44,16 @@
             <a class="no-underline" href="#contact">Contact</a>
         </nav>
         <div class="drop-menu btn btn-dark"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <nav class='onSmallLinks'>
+            <div class = "nav-area">
+                <a class="no-underline" href="#hero">Home</a>
+                <a class="no-underline" href="#about">About Me</a>
+                <a class="no-underline" href="#skills">Skills</a>
+                <a class="no-underline" href="#education">Education</a>
+                <a class="no-underline" href="#projects">My Projects</a>
+                <a class="no-underline" href="#contact">Contact</a>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="hero" id="hero">
@@ -54,8 +63,8 @@
             </div>
             <div class="hero-body">
                 <h3 class="hero-content hello">Hello & Welcome</h3>
-                <h1 class="hero-content i-am" id="hero-text">I am </h1>
-                <div class="hero-content download-button"><a href="./cv.pdf" class="btn btn-dark" id="downloadCV" download>Download CV</a></div>
+                <h1 class="hero-content i-am">I am <span id="hero-text" data-wait="500" data-words='["Asta Juodelytė", "a Developer"]'></span></span></h1>
+                <div class="hero-content download-button"><a href="./cvAstaJuodelyte.pdf" class="btn btn-dark" id="downloadCV" download>Download CV</a></div>
             </div>
             <a href="#about" class="hero-chevron-down bounce"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
         </section>
@@ -65,28 +74,23 @@
                     <h2 class="main-title">About Me</h2>
                 </div>
                 <div class="col-12 col-xxl-10 ml-xxl-1 ">
-                    <p class="description-par">I am a former procurement specialist who has found herself in
-                        programming. Decided to take another turn in my carreer path and start to learn something that I
-                        am drawn to and really passionate about. As a mathematics graduate I think I have an advantage
-                        of having good logical thinking which is fundamental skill. In my last job, which had nothing to
-                        do with programming, I would find a way to program something (mostly with excel VBA) to make my
-                        tasks run faster and more efficiently.
+                    <p class="description-par">I am a former procurement specialist who has found herself in programming. Decided to take another turn in my career path and start to learn something that I am drawn to and really passionate about. As a mathematics graduate, I think I have an advantage of having good logical thinking which is fundamental skill. 
                     </p>
                 </div>
             </div>
             <div class="row" id="skills">
                 <h2 class="main-title col-12">Skills</h2>
                 <p class="col-12 description-par text-center">This is what I have learned so far and how I would rate my
-                    knowledge as a starting programmer.</p>
+                    knowledge as an entry level programmer.</p>
                 <div class="row">
                     <div class='col-12 col-lg-6 col-xxl-5 ml-xxl-1 progress_col' id="progressCol1"></div>
                     <div class='col-12 col-lg-6 col-xxl-5 progress_col' id="progressCol2"></div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-12">
-                        CERTIFICATE
+                        CERTIFICATES
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-xxl-5 ml-xxl-1 traits">
@@ -118,10 +122,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
         </section>
         <section class="bg-grey container education" id="education">
             <div class="row">
@@ -153,7 +153,6 @@
                     </div>
                 </div>
         </section>
-
         <section id="projects" class="container">
             <div class="row">
                 <div class="col-12">
@@ -166,12 +165,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="bg-grey">
-            AVAILABLE FOR FREELANCE (KAZKUO PAKEISTI)
-        </section>
-        <section class="bg-grey">
-            REVIEWS???
-        </section> -->
+
         <section class="container" id="contact">
             <div class="row">
                 <div class="col-12">
@@ -240,8 +234,6 @@
                         </div>
                     </form>
                 </div>
-
-
             </div>
         </section>
         <button id="topbtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
